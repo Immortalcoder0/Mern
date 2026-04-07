@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript Output Methods</title>
+    <script>
+        function showAlert() {
+            alert("This is an alert message!");
+        }
+        function writeToDocument() {
+            document.write("This text is written to the document using document.write()");
+        }
+        function showInnerHTML() {
+            document.getElementById("output").innerHTML = "This text is set using innerHTML property.";
+        }
+        function showConsole() {
+            console.log("This message is logged to the console.");
+        }   
+    </script>
+</head>
+<body>
+    <h1>Different Ways of Displaying output in JavaScript</h1>
+    <button onclick="showAlert()">Show Alert</button>
+    <br><br>
+    <button onclick="writeToDocument()">Write to Document</button>
+    <br><br>
+    <button onclick="showInnerHTML()">Show InnerHTML</button>   
+    <p id="output"></p>
+    <button onclick="showConsole()">Show Console</button>   
+</body>
+</html>
